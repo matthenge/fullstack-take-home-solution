@@ -15,9 +15,9 @@ const Home = () => {
       const { books } = queryData;
       setBookList(books);
     },
-    onError: (errorData) => {
-      console.log(errorData);
-    },
+    // onError: (errorData) => {
+    //   console.error(errorData);
+    // },
   });
   const handleAddBookToList = (books: BookInterface[]) => {
     setSelectedBooks(books);
