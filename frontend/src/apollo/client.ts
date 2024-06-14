@@ -5,4 +5,10 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-export default client;
+const query = async (variables: any): Promise<any> => {
+  return client.query(variables);
+};
+
+const customClient: any = { ...client, query };
+
+export default customClient;

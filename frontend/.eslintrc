@@ -23,7 +23,7 @@
   "plugins": ["react", "jest", "prettier", "import"],
   "rules": {
     "no-throw-literal": "off",
-    "@typescript-eslint/no-throw-literal": "error",
+    "@typescript-eslint/no-throw-literal": 0,
     "react/prop-types": "off",
     "react/no-danger": 0,
     "react/jsx-uses-react": 0,

@@ -6,7 +6,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import client from "./apollo/Client";
+import client from "./apollo/client";
 import theme from "./theme";
 
 const root = ReactDOM.createRoot(

@@ -1,4 +1,5 @@
-import { booksData } from '../data/books';
+import {booksData} from '../data/books';
+import {v4 as uuidv4} from 'uuid';
 
 interface QueryBooksArgs {
   title: string
@@ -6,10 +7,15 @@ interface QueryBooksArgs {
 
 export const resolvers = {
   Query: {
-    books: () => booksData,
+    books: () => {
+      // Add a new id field to each object in the array
+      return booksData.map(obj => ({
+        ...obj,
+        id: uuidv4(),
+      }));
+    },
     searchBooks: (_: any, args: QueryBooksArgs) => {
-      const book = booksData.filter(book => book.title.toLowerCase().includes(args.title.toLowerCase()))
-      return book;
+      return booksData.filter(book => book.title.toLowerCase().includes(args.title.toLowerCase()));
     },
   },
 };
