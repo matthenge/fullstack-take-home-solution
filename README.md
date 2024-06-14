@@ -66,5 +66,5 @@ $ cd frontend
 
 #### `npm run lint` or `yarn lint` for linting OR
 
-#### `npm run test:fix` or `yarn test:fix` to lint and fix errors
+#### `npm run lint:fix` or `yarn lint:fix` to lint and fix errors
 
