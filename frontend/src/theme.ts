@@ -6,12 +6,33 @@ const theme = createTheme({
   palette: {
     primary: {
       main: "#5ACCCC",
+      light: "#CFFAFA",
+      dark: "#28B8B8",
     },
     secondary: {
-      main: "#19857b",
+      main: "#53C2C2",
+      dark: "#4AA088",
+      light: "rgba(207, 250, 250, 0.8)",
+    },
+    warning: {
+      main: "#FABD33",
+      dark: "#FAAD00",
     },
     error: {
       main: "#F76434",
+      light: "#FFE6DC",
+    },
+    text: {
+      primary: "#2D2D2D",
+      secondary: "#333333",
+      disabled: "#636161",
+    },
+    info: {
+      main: "#335C6E",
+    },
+    background: {
+      default: "#FFFFFF",
+      paper: "#FFFFFF",
     },
   },
   typography: {

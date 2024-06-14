@@ -1,12 +1,15 @@
-import {gql} from "@apollo/client";
+import { gql } from "@apollo/client";
 
-const GET_LOCATIONS = gql`
-  query GetLocations {
-    locations {
+const GET_BOOKS = gql`
+  query GetBooks {
+    books {
+      title
+      author
+      coverPhotoURL
+      readingLevel
       id
-      name
-      description
-      photo
     }
   }
 `;
+
+export default GET_BOOKS;
